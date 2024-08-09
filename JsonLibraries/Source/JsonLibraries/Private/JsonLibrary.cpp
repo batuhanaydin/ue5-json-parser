@@ -42,13 +42,6 @@ bool UJsonLibrary::GetIntegerField(const FBlueprintJsonObject& JsonObject, const
     return false;
 }
 
-bool UJsonLibrary::GetInt64Field(const FBlueprintJsonObject& JsonObject, const FString& FieldName, int64& OutValue)
-{
-    if (!JsonObject.InternalObject.IsValid())
-        return false;
-    return JsonObject.InternalObject->TryGetNumberField(FieldName, OutValue);
-}
-
 bool UJsonLibrary::GetFloatField(const FBlueprintJsonObject& JsonObject, const FString& FieldName, float& OutValue)
 {
     if (!JsonObject.InternalObject.IsValid())
