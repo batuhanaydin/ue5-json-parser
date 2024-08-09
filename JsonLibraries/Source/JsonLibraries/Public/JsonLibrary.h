@@ -36,10 +36,7 @@ public:
 
     UFUNCTION(BlueprintCallable, Category = "JSON")
     static bool GetIntegerField(const FBlueprintJsonObject& JsonObject, const FString& FieldName, int32& OutValue);
-
-    UFUNCTION(BlueprintCallable, Category = "JSON")
-    static bool GetInt64Field(const FBlueprintJsonObject& JsonObject, const FString& FieldName, int64& OutValue);
-
+	
     UFUNCTION(BlueprintCallable, Category = "JSON")
     static bool GetFloatField(const FBlueprintJsonObject& JsonObject, const FString& FieldName, float& OutValue);
 
